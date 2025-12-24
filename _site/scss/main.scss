@@ -1,8 +1,19 @@
 @use 'palette';
+@use 'layout';
 
 html, body {
   background: palette.$tint;
-  color: palette.$base;
+  color: palette.$darker;
+  font-family: Georgia, serif, "Fira Code", "Courier New";
   margin: 0;
   padding: 0;
 }
+header {
+  background: palette.$dark;
+  color: palette.$tint;
+}
+footer {
+  background: palette.$darker;
+  color: palette.$tint;
+}
+

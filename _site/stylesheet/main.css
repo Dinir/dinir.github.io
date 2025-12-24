@@ -1,8 +1,44 @@
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+header {
+  padding: 1em 0;
+  flex-basis: 16xm;
+  flex-shrink: 84;
+}
+
+main {
+  flex-basis: 84xm;
+  flex-shrink: 16;
+}
+
+footer {
+  /*position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;*/
+}
+
 html, body {
   background: #cfdae4;
-  color: #65849f;
+  color: #304353;
+  font-family: Georgia, serif, "Fira Code", "Courier New";
   margin: 0;
   padding: 0;
+}
+
+header {
+  background: #4b657c;
+  color: #cfdae4;
+}
+
+footer {
+  background: #304353;
+  color: #cfdae4;
 }
 
 /*# sourceMappingURL=main.css.map */

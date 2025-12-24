@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+header {
+  padding: 1em 0;
+  flex-basis: 16xm;
+  flex-shrink: 84;
+}
+main {
+  flex-basis: 84xm;
+  flex-shrink: 16;
+}
+footer {
+  /*position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;*/
+}
