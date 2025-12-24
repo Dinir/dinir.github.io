@@ -1,0 +1,10 @@
+- name: home
+  link: index
+- name: about
+  link: about
+- name: music
+  link: music
+- name: code
+  link: code
+- name: contact
+  link: contact

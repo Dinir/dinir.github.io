@@ -3,3 +3,5 @@ layout: default
 title: Dinir Nertan - Video Game Music Composer and Web Developer
 description: Personal homepage made to showcase works of Dinir Nertan.
 ---
+# Dinir Nertan
+## Video Game Music Composer and Web Developer

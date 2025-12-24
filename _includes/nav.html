@@ -1,14 +1,20 @@
 <nav>
   <ul>
-    {% include navitem.html path="index" name="home" %}
-    {% include navitem.html path="about" name="about" %}
-    <li>
-      Works
-      <ul>
-        {% include navitem.html path="music" name="music" %}
-        {% include navitem.html path="code" name="code" %}
-      </ul>
-    </li>
-    {% include navitem.html path="contact" name="contact" %}
+    {% for m in site.data.navigation %}
+      {% if m.link == "music" %}
+        <li>
+          Works
+          <ul>
+      {% endif %}
+          <li>
+            <a href="./{{ m.link | append: '.html' }}">
+              {{ m.name | capitalize }}
+            </a>
+          </li>
+      {% if m.link == "code" %}
+          </ul>
+        </li>
+      {% endif %}
+    {% endfor %}
   </ul>
 </nav>
