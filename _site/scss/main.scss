@@ -1,4 +1,8 @@
+@use 'palette';
+
 html, body {
+  background: palette.$tint;
+  color: palette.$base;
   margin: 0;
   padding: 0;
 }

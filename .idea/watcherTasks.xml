@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectTasksOptions">
     <TaskOptions isEnabled="false">
-      <option name="arguments" value="scss\$FileName$:%css%\$FileNameWithoutExtension$.css" />
+      <option name="arguments" value="sass scss\$FileName$ %css%\$FileNameWithoutExtension$.css" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
       <option name="exitCodeBehavior" value="ERROR" />
@@ -14,7 +14,7 @@
         <array />
       </option>
       <option name="outputFromStdout" value="false" />
-      <option name="program" value="sass" />
+      <option name="program" value="npx" />
       <option name="runOnExternalChanges" value="true" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="true" />
@@ -27,6 +27,7 @@
     </TaskOptions>
     <enabled-global>
       <option value="SCSS (./scss/ -&gt; ./stylesheet/)" />
+      <option value="Jekyll Build" />
     </enabled-global>
   </component>
 </project>
