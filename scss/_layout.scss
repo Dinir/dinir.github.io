@@ -1,22 +1,25 @@
+$side-first-length: 16;
+$side-second-length: 84;
+
 body {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 1em;
 }
 
+header, main, footer {
+  padding: 1em;
+}
+
 header {
-  padding: 1em 0;
-  flex-basis: 16xm;
-  flex-shrink: 84;
+  min-width: 10em;
+  flex-grow: $side-first-length;
+  flex-shrink: 0;
 }
 main {
-  flex-basis: 84xm;
-  flex-shrink: 16;
-}
-footer {
-  /*position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 1em;*/
+  flex-grow: $side-second-length;
+  flex-shrink: $side-first-length;
 }

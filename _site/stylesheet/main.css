@@ -1,26 +1,25 @@
 body {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 1em;
 }
 
+header, main, footer {
+  padding: 1em;
+}
+
 header {
-  padding: 1em 0;
-  flex-basis: 16xm;
-  flex-shrink: 84;
+  min-width: 10em;
+  flex-grow: 16;
+  flex-shrink: 0;
 }
 
 main {
-  flex-basis: 84xm;
+  flex-grow: 84;
   flex-shrink: 16;
-}
-
-footer {
-  /*position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 1em;*/
 }
 
 html, body {
