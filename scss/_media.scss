@@ -1,0 +1,3 @@
+@mixin for-width($size) {
+  @media screen and (max-width: $size), print { @content; }
+}

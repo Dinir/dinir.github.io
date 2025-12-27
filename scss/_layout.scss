@@ -1,23 +1,61 @@
+@use 'media';
+
 $side-first-length: 16;
 $side-second-length: 84;
+$portrait-width: 800px;
 
+@mixin for-portrait {
+  @include media.for-width($portrait-width) { @content; }
+}
+
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 body {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
   flex-wrap: wrap;
-  gap: 1em;
+  align-content: stretch;
+  justify-content: stretch;
+  align-items: stretch;
+
+  @include for-portrait {
+    flex-direction: column;
+  }
+
+  header > nav {
+    ul {
+      list-style: none;
+      padding-inline: 1em;
+      li {
+        &::marker {
+          display: none;
+        }
+      }
+
+      @include for-portrait {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+    }
+  }
 }
 
 header, main, footer {
   padding: 1em;
 }
+header {
+  @include for-portrait {
+    padding: 0;
+  }
+}
 
 header {
-  min-width: 10em;
   flex-grow: $side-first-length;
-  flex-shrink: 0;
+  flex-shrink: $side-second-length;
 }
 main {
   flex-grow: $side-second-length;

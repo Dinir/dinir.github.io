@@ -1,7 +1,5 @@
 - name: home
   link: index
-- name: about
-  link: about
 - name: music
   link: music
 - name: code

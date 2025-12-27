@@ -1,20 +1,50 @@
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
   flex-wrap: wrap;
-  gap: 1em;
+  align-content: stretch;
+  justify-content: stretch;
+  align-items: stretch;
+}
+@media screen and (max-width: 800px), print {
+  body {
+    flex-direction: column;
+  }
+}
+body header > nav ul {
+  list-style: none;
+  padding-inline: 1em;
+}
+body header > nav ul li::marker {
+  display: none;
+}
+@media screen and (max-width: 800px), print {
+  body header > nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 header, main, footer {
   padding: 1em;
 }
 
+@media screen and (max-width: 800px), print {
+  header {
+    padding: 0;
+  }
+}
+
 header {
-  min-width: 10em;
   flex-grow: 16;
-  flex-shrink: 0;
+  flex-shrink: 84;
 }
 
 main {
@@ -26,13 +56,19 @@ html, body {
   background: #cfdae4;
   color: #304353;
   font-family: Georgia, serif, "Fira Code", "Courier New";
-  margin: 0;
-  padding: 0;
+}
+
+a:link, a:hover, a:focus, a:visited {
+  color: #4b657c;
 }
 
 header {
   background: #4b657c;
   color: #cfdae4;
+}
+header > nav ul a:link, header > nav ul a:hover, header > nav ul a:focus, header > nav ul a:visited {
+  color: #cfdae4;
+  text-decoration: none;
 }
 
 footer {

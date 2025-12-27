@@ -1,20 +1,11 @@
 <nav>
   <ul>
     {% for m in site.data.navigation %}
-      {% if m.link == "music" %}
-        <li>
-          Works
-          <ul>
-      {% endif %}
-          <li>
-            <a href="./{{ m.link | append: '.html' }}">
-              {{ m.name | capitalize }}
-            </a>
-          </li>
-      {% if m.link == "code" %}
-          </ul>
-        </li>
-      {% endif %}
+      <li>
+        <a href="./{{ m.link | append: '.html' }}">
+          {{ m.name | capitalize }}
+        </a>
+      </li>
     {% endfor %}
   </ul>
 </nav>

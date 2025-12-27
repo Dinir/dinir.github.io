@@ -5,12 +5,19 @@ html, body {
   background: palette.$tint;
   color: palette.$darker;
   font-family: Georgia, serif, "Fira Code", "Courier New";
-  margin: 0;
-  padding: 0;
+}
+a:link, a:hover, a:focus, a:visited {
+  color: palette.$dark;
 }
 header {
   background: palette.$dark;
   color: palette.$tint;
+  & > nav ul {
+    a:link, a:hover, a:focus, a:visited {
+      color: palette.$tint;
+      text-decoration: none;
+    }
+  }
 }
 footer {
   background: palette.$darker;
