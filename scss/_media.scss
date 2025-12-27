@@ -1,3 +1,9 @@
+$portrait-width: 800px;
+
 @mixin for-width($size) {
   @media screen and (max-width: $size), print { @content; }
+}
+
+@mixin for-portrait {
+  @include for-width($portrait-width) { @content; }
 }
