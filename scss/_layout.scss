@@ -1,7 +1,7 @@
 @use 'media';
 
-$side-first-length: 16;
-$side-second-length: 84;
+$side-first-length: 8;
+$side-second-length: calc(100 - $side-first-length);
 $portrait-width: 800px;
 
 @mixin for-portrait {
@@ -12,6 +12,11 @@ html, body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+
+  @include for-portrait {
+    min-height: auto;
+    min-width: 100vw;
+  }
 }
 body {
   display: flex;
@@ -26,6 +31,12 @@ body {
   }
 
   header > nav {
+    line-height: 3em;
+
+    @include for-portrait {
+      line-height: normal;
+    }
+
     ul {
       list-style: none;
       padding-inline: 1em;
@@ -47,15 +58,15 @@ body {
 header, main, footer {
   padding: 1em;
 }
-header {
-  @include for-portrait {
-    padding: 0;
-  }
-}
-
-header {
+header, footer {
   flex-grow: $side-first-length;
   flex-shrink: $side-second-length;
+
+  @include for-portrait {
+    padding: 0;
+    flex-grow: 0;
+    max-height: fit-content;
+  }
 }
 main {
   flex-grow: $side-second-length;

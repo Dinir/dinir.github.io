@@ -3,6 +3,12 @@ html, body {
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 800px), print {
+  html, body {
+    min-height: auto;
+    min-width: 100vw;
+  }
+}
 
 body {
   display: flex;
@@ -15,6 +21,14 @@ body {
 @media screen and (max-width: 800px), print {
   body {
     flex-direction: column;
+  }
+}
+body header > nav {
+  line-height: 3em;
+}
+@media screen and (max-width: 800px), print {
+  body header > nav {
+    line-height: normal;
   }
 }
 body header > nav ul {
@@ -36,20 +50,21 @@ header, main, footer {
   padding: 1em;
 }
 
+header, footer {
+  flex-grow: 8;
+  flex-shrink: 92;
+}
 @media screen and (max-width: 800px), print {
-  header {
+  header, footer {
     padding: 0;
+    flex-grow: 0;
+    max-height: fit-content;
   }
 }
 
-header {
-  flex-grow: 16;
-  flex-shrink: 84;
-}
-
 main {
-  flex-grow: 84;
-  flex-shrink: 16;
+  flex-grow: 92;
+  flex-shrink: 8;
 }
 
 html, body {
