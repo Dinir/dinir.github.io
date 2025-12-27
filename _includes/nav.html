@@ -1,11 +1,11 @@
 <nav>
   <ul>
     {% for m in site.data.navigation %}
-      <li>
-        <a href="./{{ m.link | append: '.html' }}">
+      <a href="./{{ m.link | append: '.html' }}">
+        <li>
           {{ m.name | capitalize }}
-        </a>
-      </li>
+        </li>
+      </a>
     {% endfor %}
   </ul>
 </nav>
