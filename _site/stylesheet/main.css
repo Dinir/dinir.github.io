@@ -66,6 +66,14 @@ body header > nav ul {
     align-items: stretch;
   }
 }
+body header > nav ul li {
+  width: 100%;
+}
+@media screen and (max-width: 800px), print {
+  body header > nav ul li {
+    margin: 0;
+  }
+}
 body header > nav ul a {
   display: block;
   padding: 1em;
@@ -74,11 +82,6 @@ body header > nav ul a {
   body header > nav ul a {
     flex-grow: 1;
     text-align: center;
-  }
-}
-@media screen and (max-width: 800px), print {
-  body header > nav ul a li {
-    margin: 0;
   }
 }
 body main article h1 {
