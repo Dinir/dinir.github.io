@@ -13,8 +13,7 @@ html, body {
 body {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-content: stretch;
+  flex-wrap: nowrap;
   justify-content: stretch;
   align-items: stretch;
 }
@@ -22,6 +21,34 @@ body {
   body {
     flex-direction: column;
   }
+}
+body header, body main, body footer {
+  padding: 1em;
+}
+body header, body footer {
+  flex-grow: 8;
+  flex-shrink: 92;
+  width: auto;
+  height: 100vh;
+  min-width: fit-content;
+}
+@media screen and (max-width: 800px), print {
+  body header, body footer {
+    padding: 0;
+    flex-grow: 0;
+    width: 100vw;
+    height: auto;
+    min-height: fit-content;
+  }
+}
+body main {
+  flex-grow: 92;
+  flex-shrink: 8;
+}
+body header {
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 body header > nav {
   line-height: 3em;
@@ -32,39 +59,25 @@ body header > nav {
   }
 }
 body header > nav ul {
+  display: block;
   list-style: none;
   padding-inline: 1em;
 }
-body header > nav ul li::marker {
-  display: none;
-}
 @media screen and (max-width: 800px), print {
   body header > nav ul {
+    align-self: stretch;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 }
-
-header, main, footer {
-  padding: 1em;
-}
-
-header, footer {
-  flex-grow: 8;
-  flex-shrink: 92;
+body header > nav ul li:first-child {
+  margin-top: -1em;
 }
 @media screen and (max-width: 800px), print {
-  header, footer {
-    padding: 0;
-    flex-grow: 0;
-    max-height: fit-content;
+  body header > nav ul li:first-child {
+    margin-top: 0;
   }
-}
-
-main {
-  flex-grow: 92;
-  flex-shrink: 8;
 }
 
 html, body {
