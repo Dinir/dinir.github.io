@@ -1,4 +1,4 @@
-$portrait-width: 800px;
+$portrait-width: 768px;
 
 @mixin for-width($size) {
   @media screen and (max-width: $size), print { @content; }
