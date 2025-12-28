@@ -20,17 +20,20 @@ header {
   }
 
   & > nav ul {
-    a:link, a:hover, a:focus, a:visited {
-      color: $azure-tint;
-      text-decoration: none;
-    }
-    li.current {
+    li {
       a:link, a:hover, a:focus, a:visited {
-        color: $azure-brightest;
-        font-weight: bold;
+        color: $azure-tint;
         text-decoration: none;
       }
+      &.current {
+        background: $azure;
+        a:link, a:hover, a:focus, a:visited {
+          font-weight: bold;
+          text-decoration: none;
+        }
+      }
     }
+
   }
 }
 main {

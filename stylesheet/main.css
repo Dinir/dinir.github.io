@@ -137,12 +137,14 @@ header {
     box-shadow: #304353 0 0.2em 0.5em 0.05em;
   }
 }
-header > nav ul a:link, header > nav ul a:hover, header > nav ul a:focus, header > nav ul a:visited {
+header > nav ul li a:link, header > nav ul li a:hover, header > nav ul li a:focus, header > nav ul li a:visited {
   color: #cfdae4;
   text-decoration: none;
 }
+header > nav ul li.current {
+  background: #65849f;
+}
 header > nav ul li.current a:link, header > nav ul li.current a:hover, header > nav ul li.current a:focus, header > nav ul li.current a:visited {
-  color: #b3c8db;
   font-weight: bold;
   text-decoration: none;
 }
