@@ -32,6 +32,10 @@ header {
 main {
   box-shadow: inset $azure-darker .2em .2em .5em .05em;
   padding: 2em;
+  div.h1-sub {
+    color: $azure;
+    font-family: serif;
+  }
   figure {
     margin: 1em 0;
   }

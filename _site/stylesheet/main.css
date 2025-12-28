@@ -90,6 +90,10 @@ body header > nav ul a {
 body main h1 {
   margin-top: 0;
 }
+body main div.h1-sub {
+  margin-top: -1.5rem;
+  font-size: 1.2rem;
+}
 body main article figure {
   max-width: 40%;
   overflow: clip;
@@ -135,6 +139,10 @@ header > nav ul li.current a:link, header > nav ul li.current a:hover, header > 
 main {
   box-shadow: inset #304353 0.2em 0.2em 0.5em 0.05em;
   padding: 2em;
+}
+main div.h1-sub {
+  color: #65849f;
+  font-family: serif;
 }
 main figure {
   margin: 1em 0;
