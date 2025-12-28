@@ -94,13 +94,10 @@ body {
   }
 
   main {
-
+    h1 {
+      margin-top: 0;
+    }
     article {
-
-      h1 {
-        margin-top: 0;
-      }
-
       figure {
         max-width: 40%;
         overflow: clip;
