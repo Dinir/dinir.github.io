@@ -36,6 +36,9 @@ main {
     color: $azure;
     font-family: serif;
   }
+  hr {
+    border-color: $azure-brighter $azure-brightest $azure-brightest $azure-brighter;
+  }
   figure {
     margin: 1em 0;
   }

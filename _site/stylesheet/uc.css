@@ -144,6 +144,9 @@ main div.h1-sub {
   color: #65849f;
   font-family: serif;
 }
+main hr {
+  border-color: #98b5cd #b3c8db #b3c8db #98b5cd;
+}
 main figure {
   margin: 1em 0;
 }
