@@ -172,32 +172,30 @@ footer {
   color: #cfdae4;
 }
 
-main {
+div#uc {
   display: flex;
   flex-flow: column nowrap;
   flex-basis: 32rem;
   justify-content: flex-start;
   align-items: center;
 }
-
-div.uc-line {
+div#uc div.uc-line {
   display: flex;
   flex-flow: row nowrap;
 }
-div.uc-line div {
+div#uc div.uc-line div {
   width: 1em;
   height: 1em;
   box-sizing: border-box;
   border: 0.5em solid;
 }
-div.uc-line div.uc-block1 {
+div#uc div.uc-line div.uc-block1 {
   border-color: #cdb198 #4b657c #4b657c #cdb198;
 }
-div.uc-line div.uc-block2 {
+div#uc div.uc-line div.uc-block2 {
   border-color: #4b657c #cdb198 #cdb198 #4b657c;
 }
-
-h1 {
+div#uc h1 {
   display: inline-block;
   width: 32rem;
   height: 2rem;
