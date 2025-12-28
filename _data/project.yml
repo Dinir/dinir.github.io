@@ -1,0 +1,43 @@
+- id: streamliner
+  url: https://www.nexusmods.com/ballisticng/mods/16
+  img:
+  imgalt:
+  title: Streamliner
+  description: a C# class library to modify the hud of a video game called BallisticNG
+  tags:
+    - Unity
+    - C#
+- id: mini-padder
+  url: https://obsproject.com/forum/resources/mini-padder.944/
+  img: image/mini-padder-assignment.gif
+  imgalt: Showing how to assign buttons and axes in a display consists of gamepad buttons and axes.
+  title: Mini Padder
+  description: a gamepad visualizer for use in OBS Studio
+  tags:
+    - HTML5
+- id: colour-a-lancer
+  url: https://dinir.github.io/colour-a-lancer/
+  img: image/colour-a-lancer.gif
+  imgalt: There are 3 sliders, 4 text inputs, a big display of a single sprite from a sprite split made of an airplane drawn in various angle, and the sprite split below the display. The sprite turns up or down, then the sliders accept user input to change the default color to a different color. 4 text inputs are for the hex code, hue, saturation, and value. The inputs change their containing value to reflect the slider positions. After adjusting, the big display shows the sprites now in different color.
+  title: Colour a LANCER_01
+  description: modifies a sprite strip with a different color of choice
+  tags:
+    - HTML5
+- id: credit-counter
+  url: https://dinir.github.io/credit-counter/
+  img: image/just-a-credit-counter.gif
+  imgalt: two values are shown in two lines. First is 0, second is 0 cents. as the first value increases, the second value also increase by 25 cents, eventually showing the dollar sign and appropriate numbers instead of the cent sign. After increases, the values turn red before resetting into 0 and 0 cents.
+  title: Credit Counter
+  description: a tally counter responds to one game pad button and mouse wheel, customizable by editing the query in the address bar
+  tags:
+    - HTML5
+- id: text-transmitter
+  url: https://dinir.github.io/Text-Transmitter/
+  img: image/text-transmitter.gif
+  imgalt: a console-like display showing tweets. The interface somewhat resemble vim. The animation shows making a few tweets then deleting them one by one as a demonstration.
+  title: Text Transmitter
+  description: text-based Twitter client, made and working for the time the service was still called Twitter
+  tags:
+    - HTML5
+    - electron.js
+    - API Usage

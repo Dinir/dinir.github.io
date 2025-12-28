@@ -1,0 +1,37 @@
+{% assign id_slugged = include.id | slugify %}
+{% assign img_alt = include.imgalt | default: include.title %}
+<article
+  class="project-card"
+  aria-labelledby="{{ id_slugged }}-title"
+  aria-describedby="{{ id_slugged }}-desc"
+>
+  <a
+    href="{{ include.url }}"
+    {% if include.url contains '://' %}
+      aria-label="{{ include.title | append: ' (opens in a new tab)' }}"
+      target="_blank" rel="noopener noreferrer"
+    {% endif %}
+  >
+    <figure>
+      <img src="{{ include.img }}"
+           alt="{{ img_alt }}"
+           loading="lazy"
+      >
+    </figure>
+    <h3 id="{{ id_slugged }}-title">{{ include.title }}</h3>
+    <p id="{{ id_slugged }}-desc">
+      {{ include.description }}
+    </p>
+    {% if include.tags %}
+      {% assign tags_formatted = include.tags %}
+      {% if include.tags contains "," %}
+        {% assign tags_formatted = include.tags | split: "," %}
+      {% endif %}
+      <ul aria-label="Tags">
+        {% for t in tags_formatted %}
+          <li><span>{{ t | strip }}</span></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </a>
+</article>
