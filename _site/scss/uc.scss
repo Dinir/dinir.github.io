@@ -1,0 +1,39 @@
+@use 'palette' as *;
+@use 'layout';
+@use 'media';
+@use 'main';
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-basis: 32rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+div.uc-line {
+  display: flex;
+  flex-flow: row nowrap;
+  div {
+    width: 1em;
+    height: 1em;
+    box-sizing: border-box;
+    border: .5em solid;
+    &.uc-block1 {
+      border-color: $orange-brighter $azure-dark $azure-dark $orange-brighter;
+    }
+    &.uc-block2 {
+      border-color: $azure-dark $orange-brighter $orange-brighter $azure-dark;
+    }
+  }
+}
+
+h1 {
+  display: inline-block;
+  width: 32rem;
+  height: 2rem;
+  margin: .2rem 0;
+  text-align: center;
+  flex-grow: 0;
+  overflow: hidden;
+  font-size: 1.8rem;
+}
