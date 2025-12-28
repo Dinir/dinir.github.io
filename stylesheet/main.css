@@ -101,6 +101,10 @@ body main article figure.right {
   float: right;
   margin: 0 0 1em 1em;
 }
+body main article figure img {
+  max-width: 100%;
+  min-width: 1em;
+}
 
 html, body {
   background: #cfdae4;
