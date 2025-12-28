@@ -2,6 +2,7 @@
 
 $side-first-length: 8;
 $side-second-length: calc(100 - $side-first-length);
+$main-portrait-height: calc(100 - 14) * 1vh;
 
 html, body {
   min-height: 100vh;
@@ -9,7 +10,6 @@ html, body {
   padding: 0;
 
   @include media.for-portrait {
-    min-height: auto;
     min-width: 100vw;
   }
 }
@@ -22,6 +22,7 @@ body {
 
   @include media.for-portrait {
     flex-direction: column;
+    overflow-x: hidden;
   }
 
   header, footer {
@@ -46,6 +47,8 @@ body {
 
     @include media.for-portrait {
       max-width: 100vw;
+      overflow-x: hidden;
+      min-height: $main-portrait-height;
     }
   }
 
