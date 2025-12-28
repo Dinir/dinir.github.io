@@ -15,6 +15,10 @@ header {
   background: $azure-dark;
   color: $azure-tint;
 
+  @include media.for-portrait {
+    box-shadow: $azure-darker 0 .2em .5em .05em;
+  }
+
   & > nav ul {
     a:link, a:hover, a:focus, a:visited {
       color: $azure-tint;
@@ -32,6 +36,11 @@ header {
 main {
   box-shadow: inset $azure-darker .2em .2em .5em .05em;
   padding: 2em;
+
+  @include media.for-portrait {
+    box-shadow: inset $azure-darker .2em 0 .5em .05em;
+  }
+
   div.h1-sub {
     color: $azure;
     font-family: serif;

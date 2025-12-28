@@ -58,6 +58,10 @@ body {
     left: 0;
     height: 100vh;
 
+    @include media.for-portrait {
+      height: auto;
+    }
+
     & > nav {
 
       ul {
