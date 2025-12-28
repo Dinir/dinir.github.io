@@ -1,8 +1,7 @@
 @use 'media';
 
-$side-first-length: 8;
+$side-first-length: 20;
 $side-second-length: calc(100 - $side-first-length);
-$main-portrait-height: calc(100 - 14) * 1vh;
 
 html, body {
   min-height: 100vh;
@@ -25,30 +24,31 @@ body {
     overflow-x: hidden;
   }
 
-  header, footer {
-    //flex-grow: $side-first-length;
-    flex-shrink: $side-second-length;
-    width: auto;
-    height: 100vh;
-    min-width: fit-content;
+  header {
+    flex-grow: 0;
+    flex-shrink: 0;
+    //height: 100vh;
+    width: 6rem;
+    max-width: $side-first-length * 1vw;
 
     @include media.for-portrait {
       padding: 0;
       flex-grow: 0;
       width: 100vw;
       height: auto;
+      max-width: stretch;
       min-height: fit-content;
     }
   }
   main {
     flex-grow: $side-second-length;
-    flex-shrink: $side-first-length;
-    max-width: $side-second-length * 1vw;
+    /*flex-shrink: $side-first-length;
+    max-width: stretch;*/
 
     @include media.for-portrait {
       max-width: 100vw;
       overflow-x: hidden;
-      min-height: $main-portrait-height;
+      min-height: max-content;
     }
   }
 
