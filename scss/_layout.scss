@@ -76,12 +76,6 @@ body {
             margin: 0;
           }
         }
-        &:first-child {
-          li {
-            @include media.for-portrait {
-            }
-          }
-        }
 
         a {
           display: block;
