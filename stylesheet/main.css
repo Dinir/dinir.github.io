@@ -116,6 +116,17 @@ body main article figure img {
   max-width: 100%;
   min-width: 1em;
 }
+body main iframe.widget {
+  min-width: 512px;
+}
+@media screen and (max-width: 574px), print {
+  body main iframe.widget {
+    min-width: 80vw;
+  }
+}
+body main iframe.widget.soundcloud {
+  height: 345px;
+}
 
 html, body {
   background: #cfdae4;
