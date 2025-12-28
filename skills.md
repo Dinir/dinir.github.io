@@ -1,6 +1,7 @@
 ---
 layout: default
-Title: Dinir Nertan - Skills
+title: Dinir Nertan - Skills
+description: List of Dinir's technical skills.
 ---
 # Technical Skills
 
