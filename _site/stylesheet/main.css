@@ -104,6 +104,7 @@ html, body {
   background: #cfdae4;
   color: #304353;
   font-family: Georgia, serif, "Fira Code", "Courier New";
+  font-size: 16px;
 }
 
 a:link, a:hover, a:focus, a:visited {
@@ -116,6 +117,11 @@ header {
 }
 header > nav ul a:link, header > nav ul a:hover, header > nav ul a:focus, header > nav ul a:visited {
   color: #cfdae4;
+  text-decoration: none;
+}
+header > nav ul li.current a:link, header > nav ul li.current a:hover, header > nav ul li.current a:focus, header > nav ul li.current a:visited {
+  color: #b3c8db;
+  font-weight: bold;
   text-decoration: none;
 }
 
