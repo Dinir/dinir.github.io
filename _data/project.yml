@@ -32,7 +32,7 @@
   img: image/just-a-credit-counter.gif
   imgalt: two values are shown in two lines. First is 0, second is 0 cents. as the first value increases, the second value also increase by 25 cents, eventually showing the dollar sign and appropriate numbers instead of the cent sign. After increases, the values turn red before resetting into 0 and 0 cents.
   title: Credit Counter
-  description: a tally counter responds to one game pad button and mouse wheel, customizable by editing the query in the address bar
+  description: a tally counter responding to one game pad button and mouse wheel, customizable by editing the query in the address bar
   tags:
     - HTML5
 - id: text-transmitter
@@ -40,7 +40,7 @@
   img: image/text-transmitter.gif
   imgalt: a console-like display showing tweets. The interface somewhat resemble vim. The animation shows making a few tweets then deleting them one by one as a demonstration.
   title: Text Transmitter
-  description: text-based Twitter client, made and working for the time the service was still called Twitter
+  description: text-based Twitter client, made and was working for the time the service was still called Twitter
   tags:
     - HTML5
     - electron.js
