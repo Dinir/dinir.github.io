@@ -1,7 +1,7 @@
 - id: streamliner
   url: https://www.nexusmods.com/ballisticng/mods/16
-  img:
-  imgalt:
+  img: image/streamliner.gif
+  imgalt: Recording of a 3d anti-gravity racing game with its hud replaced with Streamliner.
   title: Streamliner
   description: a C# class library to modify the hud of a video game called BallisticNG
   tags:
