@@ -9,29 +9,91 @@
         figure
           img
         h3
-        p
-        ul
-          li
-            span
+      p
+      ul
+        li
+          span
  */
 
 section.project-cards {
   display: flex;
   flex-flow: row wrap;
+  align-items: flex-start;
   gap: 1em;
 
   article {
-    display: block;
+    $round-radius: 4px;
+    $height-16-9: calc(9/16 * 100) * 1%;
     justify-content: center;
-    border: 1px solid gray;
     box-sizing: border-box;
+    border: $round-radius / 2 ridge $azure-brighter;
+    border-radius: $round-radius;
     width: calc(100/3 - 2) * 1%;
+
+    &.empty {
+      border: none;
+    }
 
     @include media.for-portrait {
       width: calc(100/2 - 2) * 1%;
     }
     @include media.for-portrait-smaller {
       width: calc(100/1 - 2) * 1%;
+    }
+
+    a {
+      position: relative;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: stretch;
+      height: 100%;
+      &:link, &:hover, &:focus, &:visited {
+        color: $azure-darker;
+        text-decoration: none;
+      }
+    }
+
+    figure {
+      flex-grow: 0;
+      margin: 0;
+      max-width: initial;
+      min-height: $height-16-9;
+
+      img {
+        display: block;
+        max-width: initial;
+        min-width: initial;
+        width: 100%;
+      }
+    }
+
+    h3, p, ul {
+      margin: 0 1em 1em;
+    }
+    h3 {
+      margin-top: 1em;
+    }
+    p {
+      height: 3.5em;
+      overflow: clip;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        box-sizing: border-box;
+        border: 1px solid $azure-bright;
+        border-radius: 1em;
+        background: $azure-brightest;
+        color: $azure-dark;
+        padding: 0 .5em;
+        margin-left: .5em;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
     }
   }
 }
