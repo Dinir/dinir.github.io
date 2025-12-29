@@ -39,10 +39,9 @@ description: List of Dinir's technical skills.
 
 ---
 
-## Music & Sound (Hobby-Level)
-- FM synthesizer–based VGM style composition
+## Music & Sound
+- VGM style composition
 - Creation of 16-bit retro sound effects
-- Use of FL Studio for composition and mixing
 
 ---
 
