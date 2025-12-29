@@ -203,8 +203,9 @@ section.project-cards article div {
   margin: 0 1em 0.7em;
   height: 1.5em;
   overflow: auto clip;
-  scrollbar-color: #65849f;
-  scrollbar-gutter: stable;
+  /*scrollbar-color: $azure transparent;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;*/
 }
 section.project-cards article div::-webkit-scrollbar {
   height: 0.2em;

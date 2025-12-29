@@ -84,8 +84,9 @@ section.project-cards {
       height: 1.5em;
       overflow: auto clip;
 
-      scrollbar-color: $azure;
-      scrollbar-gutter: stable;
+      /*scrollbar-color: $azure transparent;
+      scrollbar-width: thin;
+      scrollbar-gutter: stable;*/
       &::-webkit-scrollbar {
         height: $scrollbar-height;
       }
