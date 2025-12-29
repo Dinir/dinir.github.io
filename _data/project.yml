@@ -7,6 +7,7 @@
   tags:
     - Unity
     - C#
+    - Modification
 - id: mini-padder
   url: https://obsproject.com/forum/resources/mini-padder.944/
   img: image/mini-padder-assignment.gif
@@ -15,6 +16,8 @@
   description: a gamepad visualizer for use in OBS Studio
   tags:
     - HTML5
+    - Hardware
+    - Canvas
 - id: colour-a-lancer
   url: https://dinir.github.io/colour-a-lancer/
   img: image/colour-a-lancer.gif
@@ -23,6 +26,7 @@
   description: modifies a sprite strip with a different color of choice
   tags:
     - HTML5
+    - Canvas
 - id: credit-counter
   url: https://dinir.github.io/credit-counter/
   img: image/just-a-credit-counter.gif
@@ -40,4 +44,4 @@
   tags:
     - HTML5
     - electron.js
-    - API
+    - Twitter
