@@ -1,0 +1,37 @@
+@use 'palette' as *;
+@use 'layout';
+@use 'media';
+
+/*
+  section.project-cards
+    article
+      a
+        figure
+          img
+        h3
+        p
+        ul
+          li
+            span
+ */
+
+section.project-cards {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+
+  article {
+    display: block;
+    justify-content: center;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    width: calc(100/3 - 2) * 1%;
+
+    @include media.for-portrait {
+      width: calc(100/2 - 2) * 1%;
+    }
+    @include media.for-portrait-smaller {
+      width: calc(100/1 - 2) * 1%;
+    }
+  }
+}

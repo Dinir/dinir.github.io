@@ -1,7 +1,6 @@
 {% assign id_slugged = include.id | slugify %}
 {% assign img_alt = include.imgalt | default: include.title %}
 <article
-  class="project-card"
   aria-labelledby="{{ id_slugged }}-title"
   aria-describedby="{{ id_slugged }}-desc"
 >

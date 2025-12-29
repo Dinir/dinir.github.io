@@ -4,10 +4,11 @@ title: Dinir Nertan - Code Works
 description: Codes written by Dinir.
 ---
 {% include underconstruction.html %}
+<link rel="stylesheet" href="./stylesheet/project-card.css">
 
 # Code Works
 
-<section>
+<section class="project-cards">
     {% for p in site.data.project %}
     {% include projectslot.html
         id=p.id
@@ -20,3 +21,5 @@ description: Codes written by Dinir.
     %}
     {% endfor %}
 </section>
+
+<script src="./script/projectCards.js" />
