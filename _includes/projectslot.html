@@ -22,15 +22,17 @@
   <p id="{{ id_slugged }}-desc">
     {{ include.description }}
   </p>
-  {% if include.tags %}
-  {% assign tags_formatted = include.tags %}
-  {% if include.tags contains "," %}
-  {% assign tags_formatted = include.tags | split: "," %}
-  {% endif %}
-  <ul aria-label="Tags">
-    {% for t in tags_formatted %}
-    <li><span>{{ t | strip }}</span></li>
-    {% endfor %}
-  </ul>
-  {% endif %}
+  <div>
+    {% if include.tags %}
+    {% assign tags_formatted = include.tags %}
+    {% if include.tags contains "," %}
+    {% assign tags_formatted = include.tags | split: "," %}
+    {% endif %}
+    <ul aria-label="Tags">
+      {% for t in tags_formatted %}
+      <li><span>{{ t | strip }}</span></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
 </article>

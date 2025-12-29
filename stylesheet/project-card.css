@@ -199,11 +199,31 @@ section.project-cards article p {
   height: 3.5em;
   overflow: clip;
 }
-section.project-cards article ul {
+section.project-cards article div {
+  margin: 0 1em 0.7em;
+  height: 1.5em;
+  overflow: auto clip;
+  scrollbar-color: #65849f;
+  scrollbar-gutter: stable;
+}
+section.project-cards article div::-webkit-scrollbar {
+  height: 0.2em;
+}
+section.project-cards article div::-webkit-scrollbar-corner, section.project-cards article div::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+section.project-cards article div::-webkit-scrollbar-thumb {
+  background-color: #65849f;
+  border-radius: 0.5em;
+}
+section.project-cards article div ul {
+  display: flex;
+  flex-flow: row nowrap;
   list-style-type: none;
+  margin: 0;
   padding: 0;
 }
-section.project-cards article ul li {
+section.project-cards article div ul li {
   display: inline-block;
   box-sizing: border-box;
   border: 1px solid #7f9eba;
@@ -213,7 +233,7 @@ section.project-cards article ul li {
   padding: 0 0.5em;
   margin-left: 0.5em;
 }
-section.project-cards article ul li:first-child {
+section.project-cards article div ul li:first-child {
   margin-left: 0;
 }
 
