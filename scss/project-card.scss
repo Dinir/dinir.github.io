@@ -42,7 +42,7 @@ section.project-cards {
     }
 
     a {
-      position: relative;
+      position: static;
       display: flex;
       flex-flow: column nowrap;
       align-items: stretch;

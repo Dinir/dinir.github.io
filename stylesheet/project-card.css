@@ -167,7 +167,7 @@ section.project-cards article.empty {
   }
 }
 section.project-cards article a {
-  position: relative;
+  position: static;
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
