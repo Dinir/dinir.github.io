@@ -4,6 +4,9 @@ html, body {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  left: 0;
   padding: 1em 1em 0;
 
   #title .h1-sub {
@@ -25,7 +28,7 @@ header {
       list-style: none;
       display: flex;
       flex-flow: row nowrap;
-      justify-content: space-around;
+      justify-content: flex-start;
 
       li {
         box-sizing: border-box;

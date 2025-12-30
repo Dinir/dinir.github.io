@@ -4,6 +4,13 @@
 
 body {
   background: $azure-tint;
+  color: $azure-darkest;
+}
+a {
+  &:link, &:hover, &:active, &:visited {
+    color: $azure-darker;
+    text-decoration: none;
+  }
 }
 header {
   background: $azure-darker;
@@ -17,6 +24,12 @@ header {
 
   }
   nav {
+    a {
+      &:link, &:hover, &:active, &:visited {
+        color: $azure-darker;
+        text-decoration: none;
+      }
+    }
     ul {
       background: $azure-dark;
       li {
