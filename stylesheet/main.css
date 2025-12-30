@@ -143,31 +143,21 @@ header {
   background: #4b657c;
   color: #cfdae4;
 }
-@media screen and (max-width: 768px), print {
-  header {
-    box-shadow: #304353 0 0.2em 0.5em 0.05em;
-  }
-}
 header > nav ul li a:link, header > nav ul li a:hover, header > nav ul li a:focus, header > nav ul li a:visited {
   color: #cfdae4;
   text-decoration: none;
 }
 header > nav ul li.current {
-  background: #65849f;
+  background: #cfdae4;
 }
 header > nav ul li.current a:link, header > nav ul li.current a:hover, header > nav ul li.current a:focus, header > nav ul li.current a:visited {
+  color: #4b657c;
   font-weight: bold;
   text-decoration: none;
 }
 
 main {
-  box-shadow: inset #304353 0.2em 0.2em 0.5em 0.05em;
   padding: 2em;
-}
-@media screen and (max-width: 768px), print {
-  main {
-    box-shadow: inset #304353 0.2em 0 0.5em 0.05em;
-  }
 }
 main div.h1-sub {
   color: #65849f;

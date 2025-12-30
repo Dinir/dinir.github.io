@@ -16,7 +16,7 @@ header {
   color: $azure-tint;
 
   @include media.for-portrait {
-    box-shadow: $azure-darker 0 .2em .5em .05em;
+    //box-shadow: $azure-darker 0 .2em .5em .05em;
   }
 
   & > nav ul {
@@ -26,8 +26,10 @@ header {
         text-decoration: none;
       }
       &.current {
-        background: $azure;
+        background: $azure-tint;
+        //box-shadow: 0em 0em .5em .2em;
         a:link, a:hover, a:focus, a:visited {
+          color: $azure-dark;
           font-weight: bold;
           text-decoration: none;
         }
@@ -37,11 +39,11 @@ header {
   }
 }
 main {
-  box-shadow: inset $azure-darker .2em .2em .5em .05em;
+  //box-shadow: inset $azure-darker .2em .2em .5em .05em;
   padding: 2em;
 
   @include media.for-portrait {
-    box-shadow: inset $azure-darker .2em 0 .5em .05em;
+    //box-shadow: inset $azure-darker .2em 0 .5em .05em;
   }
 
   div.h1-sub {
