@@ -1,0 +1,10 @@
+<address>
+  <a href="{{ include.link }}" target="_blank">
+    {% if include.emoji %}
+      <span aria-hidden="true">{{ include.emoji }} </span>
+    {% else %}
+      <span aria-hidden="true">　&nbsp;</span>
+    {% endif %}
+    {{ include.name }}
+  </a>
+</address>
