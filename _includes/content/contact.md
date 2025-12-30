@@ -1,9 +1,4 @@
----
-layout: singlearticle
-title: Dinir Nertan - Contact
-description: Links to get in touch with Dinir.
----
-# Contact
+## Contact
 
 {% include address.html
   link='https://soundcloud.com/dinir'

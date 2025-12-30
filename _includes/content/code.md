@@ -1,11 +1,6 @@
----
-layout: default
-title: Dinir Nertan - Code Works
-description: Codes written by Dinir.
----
 <link rel="stylesheet" href="./stylesheet/project-card.css">
 
-# Code Works
+## Code Works
 
 <section class="project-cards">
     {% for p in site.data.project %}

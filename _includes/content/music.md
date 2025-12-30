@@ -1,8 +1,4 @@
----
-layout: default
-title: Dinir Nertan - Music Works
-description: Tracks composed by Dinir.
----
+## Music
 {% include underconstruction.html %}
 
 <div style="text-align: center;">
