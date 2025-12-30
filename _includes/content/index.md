@@ -1,8 +1,6 @@
 <figure class="right">
 <img src="./image/favicon.ico" alt="a simple drawing of a pizza slice with cheese running. it has an outline of black, and gray as the dough and shadow-blue as the topping color. simplified drawings of toppings including 3 olive slices, 3 pepperoni slices, and a slice of paprika are visible on top of the topping part. a thick gray hollow square with the same style of the outline lies behind the pizza slice.">
 </figure>
-# Dinir Nertan
-<div class="h1-sub">/dɪˈnɪɚ ˈnɛrˌɚtɑn/</div>
 
 ## Video Game Music Composer and Web Developer
 

@@ -2,63 +2,35 @@
 @use 'layout';
 @use 'media';
 
-html, body {
+body {
   background: $azure-tint;
-  color: $azure-darker;
-  font-family: Georgia, serif, "Fira Code", "Courier New";
-  font-size: 16px;
-}
-a:link, a:hover, a:focus, a:visited {
-  color: $azure-dark;
 }
 header {
-  background: $azure-dark;
-  color: $azure-tint;
-
-  @include media.for-portrait {
-    //box-shadow: $azure-darker 0 .2em .5em .05em;
+  background: $azure-darker;
+  #title {
+    color: $azure-tint;
+    .h1-sub {
+      color: $azure-brighter;
+    }
   }
+  h1 {
 
-  & > nav ul {
-    li {
-      a:link, a:hover, a:focus, a:visited {
-        color: $azure-tint;
-        text-decoration: none;
-      }
-      &.current {
+  }
+  nav {
+    ul {
+      background: $azure-dark;
+      li {
+        border: .25em solid $azure-dark;
         background: $azure-tint;
-        //box-shadow: 0em 0em .5em .2em;
-        a:link, a:hover, a:focus, a:visited {
-          color: $azure-dark;
-          font-weight: bold;
-          text-decoration: none;
+
+        &.current {
+          border-bottom-color: transparent;
+        }
+
+        a {
+
         }
       }
     }
-
   }
 }
-main {
-  //box-shadow: inset $azure-darker .2em .2em .5em .05em;
-  padding: 2em;
-
-  @include media.for-portrait {
-    //box-shadow: inset $azure-darker .2em 0 .5em .05em;
-  }
-
-  div.h1-sub {
-    color: $azure;
-    font-family: serif;
-  }
-  hr {
-    border-color: $azure-brighter $azure-brightest $azure-brightest $azure-brighter;
-  }
-  figure {
-    margin: 1em 0;
-  }
-}
-footer {
-  background: $azure-darker;
-  color: $azure-tint;
-}
-

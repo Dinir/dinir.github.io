@@ -1,14 +1,22 @@
 ---
-layout: singlearticle
+layout: default
 title: Dinir Nertan - Video Game Music Composer and Web Developer
 description: Personal homepage made to showcase works of Dinir Nertan.
 ---
-{% include content/index.md %}
-
-{% include content/skills.md %}
-
-{% include content/music.md %}
-
-{% include content/code.md %}
-
-{% include content/contact.md %}
+<div id="stack">
+    <article>
+        {% include content/index.md %}
+    </article>
+    <article>
+        {% include content/skills.md %}
+    </article>
+    <article>
+        {% include content/music.md %}
+    </article>
+    <article>
+        {% include content/code.md %}
+    </article>
+    <article>
+        {% include content/contact.md %}
+    </article>
+</div>
