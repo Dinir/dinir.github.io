@@ -62,7 +62,7 @@ main figure img {
 main iframe.widget {
   min-width: 512px;
 }
-@media screen and (max-width: 400px), print {
+@media screen and (max-width: 574px), print {
   main iframe.widget {
     min-width: 80vw;
   }
@@ -104,7 +104,7 @@ section.project-cards article.empty {
     width: 48%;
   }
 }
-@media screen and (max-width: 400px), print {
+@media screen and (max-width: 574px), print {
   section.project-cards article {
     width: 98%;
   }
