@@ -1,15 +1,8 @@
 <nav>
   <ul>
     {% for m in site.data.navigation %}
-      {% if
-        page.url contains {{m.link}} or
-        page.url == "/" and m.link == "index"
-      %}
-      <li class="current">
-      {% else %}
-      <li>
-      {% endif %}
-        <a href="./{{ m.link }}">
+      <li id="item-{{ m.name }}">
+        <a href="#{{ m.name }}">
           {{ m.name | capitalize }}
         </a>
       </li>

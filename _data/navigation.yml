@@ -1,10 +1,10 @@
 - name: home
-  link: "#home"
+  filename: index
 - name: skills
-  link: "#skills"
+  filename: skills
 - name: music
-  link: "#music"
+  filename: music
 - name: code
-  link: "#code"
+  filename: code
 - name: contact
-  link: "#contact"
+  filename: contact
