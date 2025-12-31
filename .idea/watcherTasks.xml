@@ -27,6 +27,7 @@
     </TaskOptions>
     <enabled-global>
       <option value="SCSS (./scss/ -&gt; ./stylesheet/)" />
+      <option value="Jekyll Build" />
     </enabled-global>
   </component>
 </project>
