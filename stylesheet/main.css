@@ -8,7 +8,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
-  padding: 1em 1em 0;
+  padding: 0.5em 1em 0;
 }
 header #title .h1-sub {
   margin: -1.6em 0 0.8em;
@@ -110,6 +110,10 @@ header nav ul li.below {
 header nav ul li.below a:link, header nav ul li.below a:hover, header nav ul li.below a:active, header nav ul li.below a:visited {
   color: #cfdae4;
   text-decoration: none;
+}
+
+main hr {
+  border-color: #98b5cd #b3c8db #b3c8db #98b5cd;
 }
 
 /*# sourceMappingURL=main.css.map */
