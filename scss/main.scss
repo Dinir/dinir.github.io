@@ -39,11 +39,21 @@ header {
         &.current {
           border-bottom-color: transparent;
         }
+        &.below {
+          background: $azure-dark;
+          color: $azure-brightest;
 
-        a {
-
+          a {
+            &:link, &:hover, &:active, &:visited {
+              color: $azure-tint;
+              text-decoration: none;
+            }
+          }
         }
       }
     }
   }
+}
+
+main {
 }

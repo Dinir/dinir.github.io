@@ -28,10 +28,23 @@ const getLastArticlePositionFrom = y => {
 }
 const updateCurrentLi = lP => {
   if (!lP) return
-  navLis.forEach(v => v.classList.remove('current'))
+  navLis.forEach(v =>
+    v.classList.remove('current', 'below')
+  )
   const currentArticleIndex = stackArticles.findIndex(v =>
     v.id == lP.id)
-  navLis[currentArticleIndex].classList.add('current')
+
+  for (let i = 0; i < navLis.length; i++) {
+    switch (true) {
+      case i < currentArticleIndex: break
+      case i === currentArticleIndex:
+        navLis[i].classList.add('current')
+        break
+      default:
+        navLis[i].classList.add('below')
+        break
+    }
+  }
 }
 const rAFCallbackToGetLastArticle = () => {
   if (rAFPending) return
