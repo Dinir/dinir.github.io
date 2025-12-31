@@ -32,7 +32,7 @@ const updateCurrentLi = lP => {
     v.classList.remove('current', 'below')
   )
   const currentArticleIndex = stackArticles.findIndex(v =>
-    v.id == lP.id)
+    v.id === lP.id)
 
   for (let i = 0; i < navLis.length; i++) {
     switch (true) {
