@@ -1,4 +1,5 @@
-## Contact
+<section>
+<h2>Contact</h2>
 
 {% include address.html
   link='https://soundcloud.com/dinir'
@@ -10,3 +11,4 @@
   emoji='📧'
   name='E-mail'
 %}
+</section>

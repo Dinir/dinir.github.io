@@ -10,7 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
   offsetOffset = stackArticles[0].offsetTop
 
   stackArticles.forEach(v => {
-    v.style.setProperty('scroll-margin-top', `${offsetOffset}px`)
+      v.style.setProperty(
+        'scroll-margin-top',
+        v.id !== 'contact' ? `${offsetOffset}px` : `${offsetOffset - 30}px`
+      )
     v.style.setProperty('min-height',
       `calc(100vh - ${offsetOffset}px)`)
   })

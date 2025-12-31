@@ -115,5 +115,11 @@ header nav ul li.below a:link, header nav ul li.below a:hover, header nav ul li.
 main hr {
   border-color: #98b5cd #b3c8db #b3c8db #98b5cd;
 }
+main article#contact {
+  padding-top: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*# sourceMappingURL=main.css.map */

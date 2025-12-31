@@ -60,4 +60,10 @@ main {
   hr {
     border-color: $azure-brighter $azure-brightest $azure-brightest $azure-brighter;
   }
+  article#contact {
+    padding-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
