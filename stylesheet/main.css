@@ -4,16 +4,6 @@ html, body {
   overflow-x: clip;
   font-size: 16px;
 }
-@media screen and (max-width: 768px), print {
-  html, body {
-    font-size: 0.8em;
-  }
-}
-@media screen and (max-width: 574px), print {
-  html, body {
-    font-size: 0.75em;
-  }
-}
 
 header {
   position: sticky;
@@ -49,16 +39,6 @@ header nav ul li {
 header nav ul li a {
   padding: 1em;
 }
-@media screen and (max-width: 574px), print {
-  header nav ul li {
-    min-width: 1em;
-    font-size: 0.8em;
-    padding: 0.25em 0;
-  }
-  header nav ul li a {
-    padding: 0.25em;
-  }
-}
 
 main {
   padding: 0 1em;
@@ -82,7 +62,7 @@ main figure img {
 main iframe.widget {
   min-width: 512px;
 }
-@media screen and (max-width: 574px), print {
+@media screen and (max-width: 400px), print {
   main iframe.widget {
     min-width: 80vw;
   }
