@@ -41,6 +41,22 @@ header nav ul li a {
 main {
   padding: 0 1em;
 }
+main figure {
+  max-width: 40%;
+  overflow: clip;
+}
+main figure.left {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+main figure.right {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+main figure img {
+  max-width: 100%;
+  min-width: 1em;
+}
 
 /*
   section.project-cards
