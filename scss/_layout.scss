@@ -7,6 +7,15 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: clip;
+  font-size: 16px;
+
+  @include media.for-portrait {
+    font-size: .8em;
+  }
+
+  @include media.for-portrait-smaller {
+    font-size: .75em;
+  }
 }
 
 header {
@@ -14,6 +23,7 @@ header {
   top: 0;
   left: 0;
   padding: .5em 1em 0;
+  width: 100vw;
 
   #title .h1-sub {
     margin: -1.6em 0 .8em;
@@ -37,11 +47,23 @@ header {
       justify-content: flex-start;
 
       li {
+        $li-padding: .5em;
+
         box-sizing: border-box;
-        padding: 1em 0;
+        padding: $li-padding 0;
 
         a {
-          padding: 1em;
+          padding: $li-padding * 2;
+        }
+
+        @include media.for-portrait-smaller {
+          min-width: 1em;
+          font-size: 0.8em;
+          padding: $li-padding * .5 0;
+
+          a {
+            padding: $li-padding * .5;
+          }
         }
       }
     }

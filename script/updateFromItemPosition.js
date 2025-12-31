@@ -4,23 +4,20 @@ let stackArticles = []
 let lastPassed = null
 let offsetOffset = 0
 
-document.addEventListener("DOMContentLoaded", () => {
+const updateOffsets = () => {
   navLis = [...document.querySelectorAll("header nav ul li")]
   stackArticles = [...document.querySelectorAll("div#stack article[id]")]
   offsetOffset = stackArticles[0].offsetTop
 
   stackArticles.forEach(v => {
-      v.style.setProperty(
-        'scroll-margin-top',
-        v.id !== 'contact' ? `${offsetOffset}px` : `${offsetOffset - 30}px`
-      )
+    v.style.setProperty(
+      'scroll-margin-top',
+      v.id !== 'contact' ? `${offsetOffset}px` : `${offsetOffset - 30}px`
+    )
     v.style.setProperty('min-height',
       `calc(100vh - ${offsetOffset}px)`)
   })
-
-  rAFCallbackToGetLastArticle()
-})
-
+}
 const getLastArticlePositionFrom = y => {
   let i = stackArticles.findIndex(v => v.offsetTop >= y)
   switch (i) {
@@ -59,6 +56,12 @@ const rAFCallbackToGetLastArticle = () => {
   })
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  updateOffsets()
+  rAFCallbackToGetLastArticle()
+})
+
 window.addEventListener(
   'scroll', rAFCallbackToGetLastArticle, { passive: true }
 )
+window.addEventListener('resize', updateOffsets, { passive: true })
