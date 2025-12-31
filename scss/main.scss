@@ -9,7 +9,7 @@ body {
 a {
   &:link, &:hover, &:active, &:visited {
     color: $azure-darker;
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 header {
