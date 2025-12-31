@@ -1,3 +1,4 @@
+let header = document.querySelector('header')
 let navLis = []
 let stackArticles = []
 let lastPassed = null
@@ -8,9 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
   stackArticles = [...document.querySelectorAll("div#stack article[id]")]
   offsetOffset = stackArticles[0].offsetTop
 
-  stackArticles.forEach(v =>
+  stackArticles.forEach(v => {
     v.style.setProperty('scroll-margin-top', `${offsetOffset}px`)
-  )
+    v.style.setProperty('min-height',
+      `calc(100vh - ${offsetOffset}px)`)
+  })
+
   rAFCallbackToGetLastArticle()
 })
 
