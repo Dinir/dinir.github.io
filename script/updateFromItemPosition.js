@@ -1,8 +1,17 @@
+let navLis = []
 let stackArticles = []
 let lastPassed = null
+let offsetOffset = 0
 
 document.addEventListener("DOMContentLoaded", () => {
+  navLis = [...document.querySelectorAll("header nav ul li")]
   stackArticles = [...document.querySelectorAll("div#stack article[id]")]
+  offsetOffset = stackArticles[0].offsetTop
+
+  stackArticles.forEach(v =>
+    v.style.setProperty('scroll-margin-top', `${offsetOffset}px`)
+  )
+  rAFCallbackToGetLastArticle()
 })
 
 const getLastArticlePositionFrom = y => {
@@ -13,11 +22,23 @@ const getLastArticlePositionFrom = y => {
     default: return stackArticles[i - 1]
   }
 }
-window.addEventListener('scroll', () => {
+const updateCurrentLi = lP => {
+  if (!lP) return
+  navLis.forEach(v => v.classList.remove('current'))
+  const currentArticleIndex = stackArticles.findIndex(v =>
+    v.id == lP.id)
+  navLis[currentArticleIndex].classList.add('current')
+}
+const rAFCallbackToGetLastArticle = () => {
   if (rAFPending) return
   rAFPending = true
   requestAnimationFrame(() => {
     rAFPending = false
-    lastPassed = getLastArticlePositionFrom(window.scrollY + stackArticles[0].offsetTop)
+    lastPassed = getLastArticlePositionFrom(window.scrollY + offsetOffset + 1)
+    updateCurrentLi(lastPassed)
   })
-}, { passive: true })
+}
+
+window.addEventListener(
+  'scroll', rAFCallbackToGetLastArticle, { passive: true }
+)
