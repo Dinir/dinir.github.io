@@ -57,6 +57,17 @@ main figure img {
   max-width: 100%;
   min-width: 1em;
 }
+main iframe.widget {
+  min-width: 512px;
+}
+@media screen and (max-width: 574px), print {
+  main iframe.widget {
+    min-width: 80vw;
+  }
+}
+main iframe.widget.soundcloud {
+  height: 345px;
+}
 
 div#uc {
   display: flex;
