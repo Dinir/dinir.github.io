@@ -35,6 +35,7 @@ header {
       li {
         border: .25em solid $azure-dark;
         background: $azure-tint;
+        border-radius: .75em .75em 0 0;
 
         &.current {
           border-bottom-color: transparent;

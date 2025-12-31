@@ -98,6 +98,7 @@ header nav ul {
 header nav ul li {
   border: 0.25em solid #4b657c;
   background: #cfdae4;
+  border-radius: 0.75em 0.75em 0 0;
 }
 header nav ul li.current {
   border-bottom-color: transparent;
