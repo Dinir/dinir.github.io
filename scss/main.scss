@@ -37,6 +37,9 @@ header {
         background: $azure-tint;
         border-radius: .75em .75em 0 0;
 
+        &.above {
+          background: $azure-bright
+        }
         &.current {
           border-bottom-color: transparent;
         }
