@@ -188,6 +188,7 @@ main #soundcloud-tracks .track iframe.widget.soundcloud {
 #soundcloud-tracks.project-cards article {
   display: flex;
   flex-flow: column nowrap;
+  overflow: hidden;
 }
 #soundcloud-tracks.project-cards article h3 {
   background: #f5f5f5;
