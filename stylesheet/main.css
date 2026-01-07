@@ -67,8 +67,12 @@ main iframe.widget {
     min-width: 80vw;
   }
 }
-main iframe.widget.soundcloud {
+main iframe.widget.soundcloud.playlist {
   height: 345px;
+}
+main #soundcloud-tracks .track iframe.widget.soundcloud {
+  min-width: 300px;
+  height: initial;
 }
 
 body {

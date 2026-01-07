@@ -67,8 +67,12 @@ main iframe.widget {
     min-width: 80vw;
   }
 }
-main iframe.widget.soundcloud {
+main iframe.widget.soundcloud.playlist {
   height: 345px;
+}
+main #soundcloud-tracks .track iframe.widget.soundcloud {
+  min-width: 300px;
+  height: initial;
 }
 
 /*
@@ -83,66 +87,66 @@ main iframe.widget.soundcloud {
         li
           span
  */
-section.project-cards {
+.project-cards {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
   gap: 1em;
 }
-section.project-cards article {
+.project-cards article {
   justify-content: center;
   box-sizing: border-box;
   border: 2px ridge #98b5cd;
   border-radius: 4px;
   width: 31.3333333333%;
 }
-section.project-cards article.empty {
+.project-cards article.empty {
   border: none;
 }
 @media screen and (max-width: 768px), print {
-  section.project-cards article {
+  .project-cards article {
     width: 48%;
   }
 }
 @media screen and (max-width: 574px), print {
-  section.project-cards article {
+  .project-cards article {
     width: 98%;
   }
 }
-section.project-cards article a {
+.project-cards article a {
   position: static;
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
   height: 100%;
 }
-section.project-cards article a:link, section.project-cards article a:hover, section.project-cards article a:focus, section.project-cards article a:visited {
+.project-cards article a:link, .project-cards article a:hover, .project-cards article a:focus, .project-cards article a:visited {
   color: #304353;
   text-decoration: none;
 }
-section.project-cards article figure {
+.project-cards article figure {
   flex-grow: 0;
   margin: 0;
   max-width: initial;
   min-height: 56.25%;
 }
-section.project-cards article figure img {
+.project-cards article figure img {
   display: block;
   max-width: initial;
   min-width: initial;
   width: 100%;
 }
-section.project-cards article h3, section.project-cards article p, section.project-cards article ul {
+.project-cards article h3, .project-cards article p, .project-cards article ul {
   margin: 0 1em 1em;
 }
-section.project-cards article h3 {
+.project-cards article h3 {
   margin-top: 1em;
 }
-section.project-cards article p {
+.project-cards article p {
   height: 4.5em;
   overflow: clip;
 }
-section.project-cards article div {
+.project-cards article div {
   margin: 0 1em 0.7em;
   height: 1.5em;
   overflow: auto clip;
@@ -150,24 +154,24 @@ section.project-cards article div {
   scrollbar-width: thin;
   scrollbar-gutter: stable;*/
 }
-section.project-cards article div::-webkit-scrollbar {
+.project-cards article div::-webkit-scrollbar {
   height: 0.2em;
 }
-section.project-cards article div::-webkit-scrollbar-corner, section.project-cards article div::-webkit-scrollbar-track {
+.project-cards article div::-webkit-scrollbar-corner, .project-cards article div::-webkit-scrollbar-track {
   background-color: transparent;
 }
-section.project-cards article div::-webkit-scrollbar-thumb {
+.project-cards article div::-webkit-scrollbar-thumb {
   background-color: #65849f;
   border-radius: 0.5em;
 }
-section.project-cards article div ul {
+.project-cards article div ul {
   display: flex;
   flex-flow: row nowrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-section.project-cards article div ul li {
+.project-cards article div ul li {
   display: inline-block;
   box-sizing: border-box;
   border: 1px solid #7f9eba;
@@ -177,8 +181,21 @@ section.project-cards article div ul li {
   padding: 0 0.5em;
   margin-left: 0.5em;
 }
-section.project-cards article div ul li:first-child {
+.project-cards article div ul li:first-child {
   margin-left: 0;
+}
+
+#soundcloud-tracks.project-cards article {
+  display: flex;
+  flex-flow: column nowrap;
+}
+#soundcloud-tracks.project-cards article h3 {
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0.5em;
+}
+#soundcloud-tracks.project-cards article iframe.widget.soundcloud {
+  min-width: 300px;
 }
 
 /*# sourceMappingURL=project-card.css.map */

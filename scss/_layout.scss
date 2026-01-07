@@ -81,8 +81,15 @@ main {
       min-width: $widget-min-width-percent;
     }
 
-    &.soundcloud {
+    &.soundcloud.playlist {
       height: 345px; // shows 4 tracks on a playlist widget
+    }
+  }
+
+  #soundcloud-tracks {
+    .track iframe.widget.soundcloud {
+      min-width: 300px;
+      height: initial;
     }
   }
 }
