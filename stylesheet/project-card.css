@@ -74,6 +74,9 @@ main #soundcloud-tracks .track iframe.widget.soundcloud {
   min-width: 300px;
   height: initial;
 }
+main #soundcloud-tracks article h3 {
+  white-space: nowrap;
+}
 
 /*
   section.project-cards
@@ -196,7 +199,8 @@ main #soundcloud-tracks .track iframe.widget.soundcloud {
   padding: 0.5em;
 }
 #soundcloud-tracks.project-cards article iframe.widget.soundcloud {
-  min-width: 300px;
+  min-width: 227px;
+  align-self: stretch;
 }
 
 /*# sourceMappingURL=project-card.css.map */

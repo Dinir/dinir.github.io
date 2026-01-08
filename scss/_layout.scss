@@ -91,5 +91,8 @@ main {
       min-width: 300px;
       height: initial;
     }
+    & article h3 {
+      white-space: nowrap;
+    }
   }
 }

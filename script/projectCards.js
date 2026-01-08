@@ -11,13 +11,13 @@ const fillEmptyRows = () => {
 
   const cardWidth = parseFloat(getComputedStyleProperty(
     "project-card",
-    "section.project-cards article",
+    ".project-cards article",
     "width"
   ))
 
   const sectionWidth = parseFloat(getComputedStyleProperty(
     "project-card",
-    "section.project-cards",
+    ".project-cards",
     "width"
   ))
 
