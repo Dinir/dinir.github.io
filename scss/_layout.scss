@@ -1,8 +1,5 @@
 @use 'media';
 
-$widget-min-width: 512px;
-$widget-min-width-percent: 80vw;
-
 html, body {
   margin: 0;
   padding: 0;
@@ -74,15 +71,23 @@ main {
     }
   }
 
-  iframe.widget {
-    min-width: $widget-min-width;
+  article#music h3 {
+    text-align: start;
+  }
 
-    @include media.for-portrait-smaller {
-      min-width: $widget-min-width-percent;
-    }
+  iframe.widget {
+
+    &.single-column {
+    $widget-min-width: 512px;
+    $widget-min-width-percent: 89vw;
+
+    min-width: min($widget-min-width, $widget-min-width-percent);
+  }
 
     &.soundcloud.playlist {
-      height: 345px; // shows 4 tracks on a playlist widget
+      width: 100%;
+      //min-height: 342px; // shows 4 tracks on a playlist widget
+      min-height: 371px; // shows 5 tracks on a playlist widget
     }
   }
 

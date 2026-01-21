@@ -59,16 +59,15 @@ main figure img {
   max-width: 100%;
   min-width: 1em;
 }
-main iframe.widget {
-  min-width: 512px;
+main article#music h3 {
+  text-align: start;
 }
-@media screen and (max-width: 574px), print {
-  main iframe.widget {
-    min-width: 80vw;
-  }
+main iframe.widget.single-column {
+  min-width: min(512px, 89vw);
 }
 main iframe.widget.soundcloud.playlist {
-  height: 345px;
+  width: 100%;
+  min-height: 371px;
 }
 main #soundcloud-tracks .track iframe.widget.soundcloud {
   min-width: 300px;
@@ -188,17 +187,21 @@ main #soundcloud-tracks article h3 {
   margin-left: 0;
 }
 
-#soundcloud-tracks.project-cards article {
+#soundcloud-tracks.project-cards article,
+#soundcloud-playlists.project-cards article {
   display: flex;
   flex-flow: column nowrap;
   overflow: hidden;
 }
-#soundcloud-tracks.project-cards article h3 {
+#soundcloud-tracks.project-cards article h3,
+#soundcloud-playlists.project-cards article h3 {
+  text-align: center;
   background: #f5f5f5;
   margin: 0;
   padding: 0.5em;
 }
-#soundcloud-tracks.project-cards article iframe.widget.soundcloud {
+#soundcloud-tracks.project-cards article iframe.widget.soundcloud,
+#soundcloud-playlists.project-cards article iframe.widget.soundcloud {
   min-width: 227px;
   align-self: stretch;
 }

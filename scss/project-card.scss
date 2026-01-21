@@ -125,13 +125,15 @@
   }
 }
 
-#soundcloud-tracks.project-cards {
+#soundcloud-tracks.project-cards,
+#soundcloud-playlists.project-cards {
   article {
     display: flex;
     flex-flow: column nowrap;
     overflow: hidden;
 
     h3 {
+      text-align: center;
       background: #f5f5f5;
       margin: 0;
       padding: 0.5em;
