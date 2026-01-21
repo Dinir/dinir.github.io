@@ -1,7 +1,7 @@
 async function loadTracks () {
   try {
     // Fetch from SC-LatestTracksFinder repository (change YOUR_USERNAME)
-    const response = await fetch('https://raw.githubusercontent.com/dinir/SC-LatestTracksFinder/main/tracks.json')
+    const response = await fetch('https://cdn.jsdelivr.net/gh/dinir/SC-LatestTracksFinder@main/tracks.json')
 
     if (!response.ok) {
       throw new Error('Failed to load tracks')
