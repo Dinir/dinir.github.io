@@ -11,4 +11,9 @@ name='E-mail'
   emoji='🔊'
   name='SoundCloud'
 %}
+{% include address.html
+  link='https://bsky.app/profile/dinir.works'
+  emoji='🦋'
+  name='Bluesky'
+%}
 </section>
