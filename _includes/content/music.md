@@ -20,6 +20,6 @@
 <script>    
     loadTracks()
 </script>
-<h3><a href="https://soundcloud.com/dinir" target="_blank">Check out all my tracks!</a></h3>
+<h3><a href="https://soundcloud.com/dinir/tracks" target="_blank">Check out all my tracks!</a></h3>
 </div>
 
