@@ -12,9 +12,8 @@
   name='아트머그'
 %}
 {% include address.html
-  link='#'
   emoji='🎮'
-  name='Discord (dinir.works)
+  name='Discord (dinir.works)'
 %}
 {% include address.html
   link='https://twitter.com/dinir_works'
