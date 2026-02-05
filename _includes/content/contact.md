@@ -7,6 +7,11 @@
   name='E-mail'
 %}
 {% include address.html
+  link='https://soundcloud.com/dinir'
+  emoji='🔊'
+  name='SoundCloud'
+%}
+{% include address.html
   link='https://artmug.kr/index.php?channel=view&uid=55955'
   emoji='🍺'
   name='아트머그'
@@ -14,7 +19,7 @@
 {% include address.html
   link='http://discordapp.com/users/1463528136359678076'
   emoji='🎮'
-  name='Discord (dinir.works)'
+  name='Discord'
 %}
 {% include address.html
   link='https://twitter.com/dinir_works'
@@ -25,10 +30,5 @@
   link='https://bsky.app/profile/dinir.works'
   emoji='🦋'
   name='Bluesky'
-%}
-{% include address.html
-  link='https://soundcloud.com/dinir'
-  emoji='🔊'
-  name='SoundCloud'
 %}
 </section>
