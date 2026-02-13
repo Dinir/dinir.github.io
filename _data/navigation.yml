@@ -1,10 +1,10 @@
 - name: home
   filename: index
-- name: skills
-  filename: skills
 - name: music
   filename: music
 - name: code
   filename: code
+- name: skills
+  filename: skills
 - name: contact
   filename: contact
