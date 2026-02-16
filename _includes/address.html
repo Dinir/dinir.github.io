@@ -1,9 +1,9 @@
 <address>
   <a href="{% if include.link %}{{ include.link }}{% else %}#contact{% endif %}" {% if include.link %}target="_blank"{% endif %}>
     {% if include.emoji %}
-      <span aria-hidden="true">{{ include.emoji }} </span>
+      <span class="emoji" aria-hidden="true">{{ include.emoji }} </span>
     {% else %}
-      <span aria-hidden="true">　&nbsp;</span>
+      <span class="emoji" aria-hidden="true">　&nbsp;</span>
     {% endif %}
     {{ include.name }}
   </a>

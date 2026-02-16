@@ -132,5 +132,8 @@ main article#contact {
   justify-content: center;
   align-items: center;
 }
+main article#contact address span.emoji {
+  font-style: normal;
+}
 
 /*# sourceMappingURL=main.css.map */
