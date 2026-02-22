@@ -1,5 +1,6 @@
 <address>
-  <a href="{% if include.link %}{{ include.link }}{% else %}#contact{% endif %}" {% if include.link %}target="_blank"{% endif %}>
+  <!--suppress HtmlUnknownTarget, HtmlUnknownAttribute -->
+  <a href="{% if include.link %}{{ include.link }}{% else %}#contact{% endif %}" {% if include.link %} target="_blank" {% endif %}>
     {% if include.emoji %}
       <span class="emoji" aria-hidden="true">{{ include.emoji }} </span>
     {% else %}
