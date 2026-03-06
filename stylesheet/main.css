@@ -76,6 +76,9 @@ main #soundcloud-tracks .track iframe.widget.soundcloud {
 main #soundcloud-tracks article h3 {
   white-space: nowrap;
 }
+main article#contact h3 {
+  margin-bottom: 0;
+}
 
 body {
   background: #cfdae4;
