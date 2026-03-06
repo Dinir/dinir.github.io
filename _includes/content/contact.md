@@ -19,7 +19,7 @@
   name='Ko-fi'
 %}
 {% include address.html
-  link='https://melom.ing/Sa2P3l'
+  link='https://melom.ing/YyBQl'
   emoji='♏'
   name='멜로밍'
 %}
