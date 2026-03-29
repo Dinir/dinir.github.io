@@ -12,7 +12,7 @@ I enjoy composing music and building tools and features that genuinely help user
   A small collection of music I made.
 - #### [Streamliner (Unity/C#)][Streamliner]{:target="_blank"}
   Learned Unity/C# from scratch to make a Class Library that replaces HUD for a video game called BallisticNG.
-- #### [Mini Padder (JS/HTML5)][Mini Padder]{:target="_blank"} ([사용법][Mini Padder Manual (KO)]{:target="_blank"}) (OBS Forum)[Mini Padder (OBS Forum)]{:target="_blank"}
+- #### [Mini Padder (JS/HTML5)][Mini Padder]{:target="_blank"} ([사용법][Mini Padder Manual (KO)]{:target="_blank"}) ([OBS Forum][Mini Padder (OBS Forum)]{:target="_blank"})
   A lightweight real-time gamepad visualizer used by tens of thousands of users in the OBS community.
 
 [Try These First]: https://soundcloud.com/dinir/sets/spotlight?si=e011a08268004100a0f0809c6c125281&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
