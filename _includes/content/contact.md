@@ -14,19 +14,9 @@
 
 <h3>Commissions</h3>
 {% include address.html
-  link='https://ko-fi.com/dinir'
-  emoji='☕'
-  name='Ko-fi'
-%}
-{% include address.html
   link='https://melom.ing/YyBQl'
   emoji='♏'
   name='멜로밍'
-%}
-{% include address.html
-  link='https://artmug.kr/index.php?channel=view&uid=55955'
-  emoji='🍺'
-  name='아트머그'
 %}
 
 <h3>Contact</h3>
