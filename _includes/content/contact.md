@@ -41,11 +41,6 @@
   name='Discord'
 %}
 {% include address.html
-  link='https://twitter.com/dinir_works'
-  emoji='✖️'
-  name='X'
-%}
-{% include address.html
   link='https://bsky.app/profile/dinir.works'
   emoji='🦋'
   name='Bluesky'
